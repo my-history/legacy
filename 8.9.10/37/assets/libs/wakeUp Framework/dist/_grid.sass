@@ -1,0 +1,73 @@
+// Settings
+
+.container
+	width: $container-width //Change it, if you need in "services/_variables.sass"
+	margin-left: auto
+	margin-right: auto
+	@media (max-width: 770px)
+		width: 100%
+		padding-left: $gutter //Change it, if you need in "services/_variables.sass"
+		padding-right: $gutter
+
+	@media (max-width: 990px)
+		width: 100%
+		padding-left: $gutter * 2
+		padding-right: $gutter *2
+
+.container-fluid
+	width: 100%
+
+.row
+	display: flex
+	flex-direction: row
+	@media (max-width: 770px)
+		flex-direction: column
+
+.row.row-guttered > *
+	padding-left: $gutter
+	padding-right: $gutter
+	padding-top: $gutter / 2
+	padding-bottom: $gutter / 2
+
+.row.row-top
+	justify-content: flex-start !important
+	align-items: center !important
+	@media (max-width: 770px)
+		justify-content: center !important
+		align-items: flex-start !important
+	
+
+.row.row-centered
+	justify-content: center !important
+	align-items: center !important
+	
+
+.row.row-bottom
+	justify-content: flex-end !important
+	align-items: center !important
+	@media (max-width: 770px)
+		justify-content: center !important
+		align-items: flex-end !important
+
+//Columns
+//Optional, you can import only that grid, that you need
+@import "columns/2-columns"
+@import "columns/3-columns"
+@import "columns/4-columns"
+@import "columns/5-columns"
+// @import "columns/6-columns"
+// @import "columns/7-columns"
+// @import "columns/8-columns"
+// @import "columns/9-columns"
+// @import "columns/10-columns"
+// @import "columns/11-columns"
+ @import "columns/12-columns"
+// @import "columns/13-columns"
+// @import "columns/14-columns"
+// @import "columns/15-columns"
+// @import "columns/16-columns"
+// @import "columns/17-columns"
+// @import "columns/18-columns"
+// @import "columns/19-columns"
+// @import "columns/20-columns"
+// @import "columns/100-columns"

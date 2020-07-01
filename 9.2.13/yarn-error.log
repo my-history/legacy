@@ -1,0 +1,71 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\Yarn\bin\yarn.js add libpng
+
+PATH: 
+  C:\Program Files\Python36-32\Scripts\;C:\Program Files\Python36-32\;C:\Program Files\Embarcadero\Studio\19.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Skype\Phone\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Yarn\bin\;C:\Users\Олег\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Олег\AppData\Local\Programs\Python\Python37-32\;C:\Users\Олег\AppData\Local\Programs\Python\Launcher\;C:\Users\Олег\AppData\Local\Microsoft\WindowsApps;C:\Users\Олег\AppData\Local\atom\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Олег\AppData\Local\Microsoft\WindowsApps;C:\Users\Олег\AppData\Roaming\npm;C:\Program Files\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe;;C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.1\bin;;C:\Users\Олег\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  8.12.0
+
+Platform: 
+  win32 ia32
+
+Trace: 
+  Error: https://registry.yarnpkg.com/libpng: Not found
+      at Request.params.callback [as _callback] (C:\Program Files\Yarn\lib\cli.js:65364:18)
+      at Request.self.callback (C:\Program Files\Yarn\lib\cli.js:129397:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (C:\Program Files\Yarn\lib\cli.js:130369:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (C:\Program Files\Yarn\lib\cli.js:130291:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "mymotherland",
+    "version": "19.2.8",
+    "description": "",
+    "main": "webpack.config.js",
+    "scripts": {
+      "dev": "webpack-dev-server --open --host 192.168.0.100 --hot --mode development",
+      "build": "webpack --mode production"
+    },
+    "browserslist": [
+      "> 1%",
+      "last 3 version"
+    ],
+    "author": "daniilko0 <danikk10001@yandex.ru>",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.2.2",
+      "@babel/preset-env": "^7.3.1",
+      "autoprefixer": "^9.4.7",
+      "babel-loader": "^8.0.5",
+      "css-loader": "^2.1.0",
+      "css-mqpacker": "^7.0.0",
+      "cssnano": "^4.1.8",
+      "imagemin-pngquant": "^5.0.1",
+      "mini-css-extract-plugin": "^0.5.0",
+      "node-sass": "^4.11.0",
+      "path": "^0.12.7",
+      "pngquant-bin": "^3.1.1",
+      "postcss-loader": "^3.0.0",
+      "sass-loader": "^7.1.0",
+      "style-loader": "^0.23.1",
+      "webpack": "^4.29.3",
+      "webpack-cli": "^3.2.3",
+      "webpack-dev-server": "^3.1.14"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,53 @@
+=font($ff, $fz, $fw, $c, $ta, $td, $tt, $lh, $lsp)
+	font-family: $ff
+	font-size: $fz
+	font-weight: $fw
+	color: $c
+	text-align: $ta
+	text-decoration: $td
+	text-transform: $tt
+	line-height: $lh
+	letter-spacing: $lsp
+
+=fa($sym, $t, $b, $l, $r)
+	font-family: "Font Awesome 5 Pro"
+	content: $sym
+	font-weight: 300
+	+p($t, $b, $l, $r)
+
+
+=p($t, $b, $l, $r)
+	padding-top: $t
+	padding-bottom: $b
+	padding-left: $l
+	padding-right: $r
+
+=m($t, $b, $l, $r)
+	margin-top: $t
+	margin-bottom: $b
+	margin-left: $l
+	margin-right: $r
+
+=brs($r)
+  -webkit-border-radius: $r
+  -moz-border-radius:    $r
+  -ms-border-radius:     $r
+  border-radius:         $r
+
+=b($side, $w, $s, $c)
+	@if $side == top
+		border-top: $w $s $c
+	@else if $side == bottom
+		border-bottom: $w $s $c
+	@else if $side == left
+		border-left: $w $s $c
+	@else if $side == right
+		border-right: $w $s $c
+	@else
+		border: $w $s $c
+
+=flex-parent ($dir, $just, $align)
+	display: flex
+	flex-direction: $dir
+	justify-content: $just
+	align-items: $align

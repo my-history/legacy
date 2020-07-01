@@ -1,0 +1,127 @@
+.card {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  margin: 30px;
+  border-radius: 15px;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14),
+    0 2px 2px 0 rgba(0, 0, 0, 0.12),
+    0 1px 3px 0 rgba(0, 0, 0, 0.20);
+
+  @media (max-width: 1650px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+  }
+
+  @media (max-width: 1030px) {
+    width: 500px;
+    height: 400px;
+  }
+
+  @media (max-width: 766px) {
+    width: 300px;
+    height: 500px;
+  }
+
+  @media (max-width: 499px) {
+    width: 400px;
+  }
+
+  @media (max-width: 470px) {
+    width: 300px;
+  }
+
+  @media (max-width: 370px) {
+    width: 200px;
+    height: 350px;
+  }
+
+  &-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media (max-width: 1030px) {
+      flex-direction: column;
+    }
+  }
+
+  &-image {
+    height: 200px;
+    width: 200px;
+    margin: 10px 30px 10px 30px;
+    align-self: center;
+
+    @media (max-width: 960px) {
+      height: 200px;
+      margin: 20px 10px 20px 10px;
+    }
+
+    @media (max-width: 1030px) {
+      height: 200px;
+      width: 200px;
+    }
+
+    @media (max-width: 766px) {
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (max-width: 370px) {
+      width: 70px;
+      height: 70px;
+      margin: 0;
+
+    }
+  }
+
+  &-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+
+    @media (max-width: 960px) {
+      align-self: center;
+      margin: 0;
+    }
+  }
+
+  &-title {
+    font-family: var(--lato);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px auto;
+  }
+
+  &-description {
+    font-family: var(--pfd);
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+  }
+
+  &-button {
+    border: 2px solid;
+    font-family: var(--pfd);
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #222222;
+    text-decoration: none;
+    outline: none;
+  }
+
+}

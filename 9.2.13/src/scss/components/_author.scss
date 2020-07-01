@@ -1,0 +1,28 @@
+.Author {
+	@include flexParent();
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+	& * {
+		font-family: $mainFont;
+		font-size: 1.5rem;
+	}
+
+	&-changeData {
+
+		&:before {
+			@include fa('\f073', 1rem);
+		}
+	}
+
+	&-name {
+
+		&:before {
+			@include fa('\f6a4', 1rem);
+		}
+	}
+
+}

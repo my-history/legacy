@@ -1,0 +1,57 @@
+/*
+ * Icon Font Collection-1
+ * Made with love by Icons8 [ https://icons8.com/ ] using FontCustom [ https://github.com/FontCustom/fontcustom ]
+ *
+ * Contacts:
+ *    [ https://icons8.com/contact ]
+ *
+ * Follow Icon8 on
+ *    Twitter [ https://twitter.com/icons_8 ]
+ *    Facebook [ https://www.facebook.com/Icons8 ]
+ *    Google+ [ https://plus.google.com/+Icons8 ]
+ *    GitHub [ https://github.com/icons8 ]
+ */
+
+
+@font-face {
+  font-family: "Collection-1";
+  src: url("../../fonts/Icons/Collection-1.eot");
+  src: url("../../fonts/Icons/Collection-1.eot?#iefix") format("embedded-opentype"),
+       url("../../fonts/Icons/Collection-1.woff2") format("woff2"),
+       url("../../fonts/Icons/Collection-1.woff") format("woff"),
+       url("../../fonts/Icons/Collection-1.ttf") format("truetype"),
+       url("../../fonts/Icons/Collection-1.svg#Collection-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Collection-1";
+    src: url("../../fonts/Icons/Collection-1.svg#Collection-1") format("svg");
+  }
+}
+
+[data-icons8]:before { content: attr(data-icons8); }
+
+.icons, [data-icons8]:before,
+.icons-true:before,
+.icons-medal:before,
+.icons-future:before {
+  display: inline-block;
+  font-family: "Collection-1";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icons-true:before { content: "\f100"; }
+.icons-medal:before { content: "\f101"; }
+.icons-future:before { content: "\f102"; }

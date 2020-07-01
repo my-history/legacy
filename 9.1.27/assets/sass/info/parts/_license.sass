@@ -1,0 +1,55 @@
+.terms
+	font-family: $sub-font
+	text-align: left
+	font-size: 1.6rem
+	&.icon:before
+		font-family: "Font Awesome 5 Brands"
+		padding: 1rem
+		font-size: 3rem
+		vertical-align: middle
+	&.by:before
+		content: "\f4e7"
+	&.sa:before
+		content: "\f4ef"
+	&.nc:before
+		content: "\f4e8"
+
+.short__summary
+	padding: 30px
+
+.full__text
+	margin-left: auto
+	margin-right: auto
+	background-color: #e9e9e9
+	font-size: 1.4rem
+	font-family: $sub-font
+	padding: 30px
+	margin-top: 20px
+	margin-bottom: 20px
+	& a
+		color: $accent
+		text-decoration: none
+	& ul
+		list-style: lower-latin
+		& li
+			padding: 10px
+			& ul
+				list-style: decimal
+				& li 
+					padding: 10px
+					& ul
+						list-style: upper-latin
+						& li
+							padding: 10px
+							& ul
+								list-style: lower-roman
+
+
+.white
+	background-color: #ffffff
+	width: 80%
+	margin-left: auto
+	margin-right: auto
+	padding: 20px
+	margin-top: 20px
+	margin-bottom: 20px

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Файл sitemap.xml динамически создан сайтом https://gensitemap.ru/ 26.03.2018 21:05,
+	всего найдено 6. страниц-->
+	<url>
+		<loc>http://new.xn--80aafwayieepbinro9o.xn--p1ai/test.html</loc>
+		<lastmod>2018-03-26T21:05:06+03:00</lastmod>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://new.xn--80aafwayieepbinro9o.xn--p1ai/peoples.html</loc>
+		<lastmod>2018-03-26T21:05:06+03:00</lastmod>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>http://new.xn--80aafwayieepbinro9o.xn--p1ai/</loc>
+		<lastmod>2018-03-26T21:05:06+03:00</lastmod>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>http://new.xn--80aafwayieepbinro9o.xn--p1ai/pay.html</loc>
+		<lastmod>2018-03-26T21:05:06+03:00</lastmod>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://new.xn--80aafwayieepbinro9o.xn--p1ai/dates.html</loc>
+		<lastmod>2018-03-26T21:05:06+03:00</lastmod>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>http://new.xn--80aafwayieepbinro9o.xn--p1ai/sights.html</loc>
+		<lastmod>2018-03-26T21:05:06+03:00</lastmod>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>http://new.xn--80aafwayieepbinro9o.xn--p1ai/me.html</loc>
+		<lastmod>2018-03-26T21:05:06+03:00</lastmod>
+		<priority>0.3</priority>
+	</url>
+</urlset>

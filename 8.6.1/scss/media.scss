@@ -1,0 +1,224 @@
+@import "vars.scss";
+
+/*Только сматфоны*/
+@media only screen and (min-width:0px) and (max-width:640px) {
+	.mob-none {
+		display: none;
+	}
+	.header-logo {
+		margin-top: 10px;
+	}
+	.arms {
+		max-width: 25px;
+		max-height: 30px;
+	}
+}
+
+
+/*Смартфоны и больше*/
+@media only screen and (min-width:0px) {
+	header {
+		height: 9vh;
+	}
+	.header-grid {
+		grid-template-columns: 1fr .5fr 4fr;
+		grid-template-rows: 9vh;
+	}
+	.article-grid {
+		grid-template-columns: 12fr;
+		grid-template-rows: minmax(100px,auto);
+	}
+	.social-item:nth-child(1) {
+		margin-left: 80px;
+	}
+
+	.social {
+		margin-bottom: 20px;
+	}
+	fieldset {
+		width: 300px
+	}
+
+	.fb-form {
+		padding: 30px 20px 20px;
+		height: 45vh
+	}
+}
+
+
+/*Только планшеты*/
+@media only screen and (min-width:641px) and (max-width:1024px) {
+	.tab-none {
+		display: none;
+	}
+}
+/*Планшеты и больше*/
+@media only screen and (min-width:641px) {
+	header {
+		max-height: 7vh;
+	}
+	.header-grid {
+		grid-template-columns: 60px 50px 10fr;
+		grid-area: "header-menu header-logo header-title";
+	}
+	.header-logo {
+		margin-top: 10px;
+	}
+	.article-grid {
+		grid-template-columns: 12fr;
+		grid-template-rows: minmax(100px,auto);
+	}
+	.banner {
+		position: relative;
+		max-width: 250px;
+		max-height: 200px;
+	}
+	.vk-group-button {
+		text-decoration: none;
+		max-width: 140px;
+		max-height: 35px;
+		background-color: $vk;
+		text-align: center;
+		color: $white;
+		font-weight: bolder;
+		text-transform: uppercase;
+		margin-left: 55px;
+		margin-right: 55px;
+		margin-top: 20px;
+		margin-bottom: 25px;
+		font-size: 16px;
+
+	}
+	.social {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 3px;
+		grid-template-areas: "vk" "telegram" "yandex" "gmail";
+	}
+	.feedback-form {
+		padding: 10px;
+		width: 500px;
+		border: 2px solid $accent
+	}
+
+	.fb-form {
+		padding: 30px 20px 20px;
+		height: 35vh
+	}
+}
+/*Ноутбуки и больше*/
+@media only screen and (min-width:1020px) {
+	header {
+		max-height: 6.5vh;
+	}
+	.header-grid {
+		grid-template-columns: 60px 50px 10fr;
+		grid-area: "header-menu header-logo header-title";
+	}
+	.article-grid {
+		grid-template-columns: 9fr 2.5fr .5fr;
+		grid-template-areas: "section aside space";
+	}
+	.banner {
+		position: relative;
+		max-width: 250px;
+		max-height: 230px;
+	}
+	.vk-group {
+		position: relative;
+		&-title {
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		&-divider {
+			border-bottom: 1px solid $dgray;
+			width: 75%;
+			margin-left: 12.5%;
+			margin-top: 25px;
+		}
+		&-button {
+			width: 150px;
+			max-height: 55px;
+			background-color: $vk;
+			text-align: center;
+			color: $white;
+			font-weight: bolder;
+			text-transform: uppercase;
+			margin-left: 25px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			font-size: 16px;
+			text-decoration: none;
+		}
+		&-title {
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		&-divider {
+			border-bottom: 1px solid $dgray;
+			width: 75%;
+			margin-left: 12.5%;
+			margin-top: 25px;
+		}
+		&-button {
+			width: 150px;
+			max-height: 55px;
+			background-color: $vk;
+			text-align: center;
+			color: $white;
+			font-weight: bolder;
+			text-transform: uppercase;
+			margin-left: 55px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			font-size: 16px;
+			text-decoration: none;
+		}
+	}
+	.header-logo {
+		margin-top: 10px;
+	}
+
+	.feedback-form {
+		padding: 10px;
+		width: 500px;
+		border: 2px solid $accent
+	}
+
+	.fb-form {
+		padding: 30px 20px 20px;
+		height: 35vh
+	}
+}
+
+@media only screen and (min-width:1201px) {
+	header {
+		max-height: 6.5vh;
+	}
+	.header-grid {
+		grid-template-columns: 60px 50px 10fr;
+		grid-area: "header-menu header-logo header-title";
+	}
+	.article-grid {
+		grid-template-columns: 9fr 2.5fr .5fr;
+		grid-template-areas: "section aside space";
+	}
+	.banner {
+		position: relative;
+		max-width: 250px;
+		max-height: 250px;
+	}
+	.social {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas: "vk" "telegram" "yandex" "gmail";
+	}
+	.fb-form {
+		padding: 30px 20px 20px;
+		height: 35vh
+	}
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Я и моя родина</title>
+		<link rel="shortcut icon" type="image/png" href="../../assets/img/logo.png">
+		<link rel="stylesheet" href="../assets/css/main.css">
+		<link rel="stylesheet" href="../assets/css/testSystem/main.css">
+		<script src="../assets/libs/fontawesome/fontawesome-all.min.js"></script>
+	</head>
+	<body>
+		<h1 class="page-title">Тест по истории Ивановской области</h1>
+		<div class="testWrapper">
+			<div class="startScreen" id="start">
+				<h5 class="title">Тест по истории Ивановской области</h5>
+				<div class="description">&nbsp;</div>
+				<a class="test-btn" id="startTest">Начать тест</a>
+			</div>
+			<div id="test" class="test">
+
+				<h4 class="numberOfQuestion" id="numberOfQuestion"></h5>
+				<h5 class="textOfQuestion" id="textOfQuestion"></h4>
+
+				<div class="qImgInner" id="qImgInner">
+					<div class="qImgWrapper" id="qImg"></div>
+				</div>
+
+				<div class="answers" id="answers-list">
+					<div class="checkAnswer_warining" id="warining">
+						<i class="fal fa-exclamation-triangle warining-icon"></i>
+						<h6>Выберите вариант ответа!</h6>
+					</div>
+
+					<div class="answersImgHolder" id="answersImgHolder">
+
+						<div class="answerImgInner" id="answerImg0">
+							<div class="answerImgWrapper">
+							</div>
+						</div>
+						<div class="answerImgInner" id="answerImg1">
+							<div class="answerImgWrapper">
+							</div>
+						</div>
+						<div class="answerImgInner" id="answerImg2">
+							<div class="answerImgWrapper">
+							</div>
+						</div>
+						<div class="answerImgInner" id="answerImg3">
+							<div class="answerImgWrapper">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="textAnswers" id="textAnswers">
+						<div class="textAnswer test-btn" id="answer0"></div>
+						<div class="textAnswer test-btn" id="answer1"></div>
+						<div class="textAnswer test-btn" id="answer2"></div>
+						<div class="textAnswer test-btn" id="answer3"></div>
+					</div>
+
+				</div>
+				<a class="test-btn" id="submit-question">Следующий вопрос</a>
+			</form>
+			<div class="finishScreen" id="finish">					
+				<h5 class="title">Тест завершен!</h5>
+				<div class="result">
+					<span class="trueAnswers"></span>
+					<span class="slash">/</span>
+					<span class="totalQuestions"></span>
+					<span class="text">правильных ответов</span>
+				</div>						
+					<a class="test-btn" onclick="restartTest()">Еще раз</a>
+			</div>
+		</div>
+
+				
+		<script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+		<script src="../assets/libs/testSystem/testV2.js"></script>
+	</body>
+
+</html>

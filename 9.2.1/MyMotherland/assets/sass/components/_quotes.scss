@@ -1,0 +1,25 @@
+$block: '.Quote';
+
+#{$block} {
+	border-left: 1px solid;
+	padding: 0 0 0 20px;
+	margin: 20px 0;
+	font: italic 400 1.7rem / 1 $mainFont;
+	width: 50%;
+
+	@media (max-width: 960px) {
+		width: 80%;
+	}
+
+	&#{$block+$themeNameIva} {
+		border-left-color: $darkAccentIva;
+	}
+
+	&#{$block+$themeNameKos} {
+		border-left-color: $darkAccentKos;
+	}
+
+	&#{$block+$themeNameYar} {
+		border-left-color: $darkAccentYar;
+	}
+}

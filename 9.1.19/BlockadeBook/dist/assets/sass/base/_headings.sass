@@ -1,0 +1,45 @@
+.heading-block
+	+m(0, 8rem, 0, 0)
+	@extend %mlamra
+	text-align: center
+	
+.heading-1
+	+font($main-font, 6rem, 700, #fff, left, none, uppercase, 1.1, -2px)
+	@media (max-width: 94rem)
+		font-size: 4rem
+
+.heading-2
+	+font($main-font, 4rem, 700, #222, center, none, none, 75px, -2px)
+	@media (max-width: 94rem)
+		font-size: 3rem
+
+
+.heading-3
+	+font($main-font, 3.5rem, 700, #222, center, none, none, 75px, -2px)
+	@media (max-width: 94rem)
+		font-size: 2.8rem
+
+.heading-4
+	+font($main-font, 1.8rem, 600, #222, center, none, none, 0, 0)
+	+m(0, 1rem, 0, 0)
+
+.subtitle
+	+font($sub-font, 2rem, 700, #777, center, none, none, 0, 0)
+	text-align: center
+	&.subtitle--header
+		color: #cccccc
+		@media (max-width: 94rem)
+			font-size: 15px
+	&.subtitle--features
+		font-size: 1.6rem
+		text-align: justify
+	&.subtitle--regions
+		text-align: center
+		font-size: 1.6rem
+.h-4f
+	color: #636e72
+
+.content
+	width: 90%
+	
+	+p(20px, 30px, 30px, 0)

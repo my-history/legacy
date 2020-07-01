@@ -1,0 +1,32 @@
+.examinest {
+  background-color: var(--grey-100);
+  width: 700px;
+  height: 700px;
+  border-radius: 10px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: var(--main-shadow);
+
+  @media (max-width:710px) {
+    width: 80%;
+    height: 60vh;
+  }
+
+  @media (max-width:360px) {
+    width: 90%;
+    height: auto
+  }
+
+  & .screen {
+    display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+  }
+
+  & .screen.test {
+    justify-content: flex-start;
+
+  }
+}

@@ -1,0 +1,58 @@
+$block: '.IconPack';
+
+#{$block} {
+	&#{$block}--home {
+			&:before {
+				@include fa('\f015')
+			}
+	}
+
+	&#{$block}--users {
+			&:before {
+				@include fa('\f0c0')
+			}
+	}
+
+	&#{$block}--calendar {
+		&:before {
+			@include fa('\f783')
+		}
+	}
+
+	&#{$block}--city {
+		&:before {
+			@include fa('\f64f')
+		}
+	}
+
+	&#{$block}--swords {
+		&:before {
+			@include fa('\f71d ')
+		}
+	}
+
+	&#{$block}--question {
+		&:before {
+			@include fa('\f128')
+		}
+	}
+
+	&#{$block}--info {
+		&:before {
+			@include fa('\f05a')
+		}
+	}
+
+	&#{$block}--handshake {
+		&:before {
+			@include fa('\f2b5')
+		}
+	}
+
+	&#{$block}--books {
+		&:before {
+			@include fa('\f5db')
+		}
+	}
+
+}

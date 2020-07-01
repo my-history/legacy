@@ -1,0 +1,10 @@
+$i: 1
+$t: 100 / 19
+
+@while $i < 20
+	.col-#{19 - $i + 1}-of-19
+		$w: #{$t * (19 - $i + 1)}
+		width: #{$w + "%"}
+		@media (max-width: 940px)
+			width: 100%
+		$i: $i + 1

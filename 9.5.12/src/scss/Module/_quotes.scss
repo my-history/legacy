@@ -1,0 +1,33 @@
+#{$quote-type} {
+
+	color: var(--light-theme-text-color);
+	font-family: var(--lato);
+	padding-left: 15px;
+	font-size: 1.9rem;
+	display: block;
+
+	&:before, &:after {
+		content: "";
+	}
+
+	&.a {
+		border-left: 2px solid var(--light-theme-text-color);
+	}
+
+	&.p {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+
+	& cite {
+		padding-top: 10px;
+		text-align: right !important;
+		font-style: italic;
+
+		&:before {
+			content: "\A";
+			white-space: pre;
+		}
+	}
+}

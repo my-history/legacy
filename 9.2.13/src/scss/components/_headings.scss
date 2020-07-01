@@ -1,0 +1,151 @@
+$block: '.Title';
+$block2: '.Subtitle';
+$block3: '.Text';
+
+#{$block} {
+
+	font-family: $mainFont, Arial, Helvetica, sans-serif;
+
+	&#{$block}--landingHeader {
+		color: #fff;
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 66px;
+	}
+	&#{$block}--landingBlock {
+		color: #222;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 75px;
+	}
+	&#{$block}--landingColumn {
+		color: #222;
+		font-weight: 600;
+		font-size: 20px;
+	}
+
+	&#{$block}--articleTitle {
+		color: #222;
+		font-weight: 700;
+		font-size: 30px;
+		text-align: center;
+
+		&.BB {
+			font-size: 3rem;
+		}
+
+		&#{$themeDarkName} {
+			color: $dark-theme-text-color;
+		}
+	}
+	&#{$block}--articleFirstLevelTitle {
+		color: #222;
+		font-weight: 500;
+		font-size: 28px;
+
+		&.BB {
+			font-size: 2.8rem;
+		}
+
+		&#{$themeDarkName} {
+			color: $dark-theme-text-color;
+		}
+	}
+	&#{$block}--articleSecondLevelTitle {
+		color: #222;
+		font-weight: 500;
+		font-size: 25px;
+		&.BB {
+			font-size: 2.5rem;
+		}
+		&#{$themeDarkName} {
+			color: $dark-theme-text-color;
+		}
+	}
+
+	&#{$block}--testTitle {
+		color: #222;
+		font-weight: 700;
+		font-size: 30px;
+	}
+	
+}
+
+#{$block2} {
+
+	font-family: $subFont, Georgia, 'Times New Roman', Times, serif;
+
+	&#{$block2}--landingHeader {
+		color: #cccccc;
+		font-weight: 400;
+		font-size: 20px;
+	}
+	&#{$block2}--landingBlock {
+		color: #777777;
+		font-weight: 400;
+		font-size: 20px;
+	}
+	&#{$block2}--landingColumn {
+		color: #777777;
+		font-weight: 400;
+		font-size: 18px;
+	}
+	&#{$block2}--articleSubtitle {
+		color: #222222;
+		font-weight: 600;
+		font-size: 20px;
+		text-align: center;
+		margin: 20px;
+
+		&.BB {
+			font-size: 2rem;
+		}
+
+		&#{$themeDarkName} {
+			color: $dark-theme-text-color;
+		}
+	}
+
+	&#{$block2}--testTextOfQuestion {
+		color: #222222;
+		font-weight: 400;
+		font-size: 17px;
+	}
+
+}
+
+#{$block3} {
+
+	font-family: $subFont, Georgia, 'Times New Roman', Times, serif;
+
+	&#{$block3}--landingFooter{
+		font-family: $mainFont, Arial, Helvetica, sans-serif;
+		color: #636e72;
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	&#{$block3}--articleText {
+		color: #222222;
+		font-weight: 400;
+		font-size: 18px;
+		//width: 80%;
+		padding: 20px 30px 20px 30px;
+		text-align: justify; 
+
+		&.BB {
+			font-size: 1.8rem;
+		}
+
+		&#{$themeDarkName} {
+			color: $dark-theme-text-color;
+		}
+
+	}
+
+	&#{$block3}--testTextOfAnswers {
+		color: #ffffff;
+		font-weight: 400;
+		font-size: 14px;
+	}
+}

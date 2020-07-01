@@ -1,0 +1,10 @@
+$i: 1
+$t: 100 / 3
+
+@while $i < 4
+	.col-#{3 - $i + 1}-of-3
+		$w: #{$t * (3 - $i + 1)}
+		width: #{$w + "%"}
+		@media (max-width: 940px)
+			width: 100%
+	$i: $i + 1

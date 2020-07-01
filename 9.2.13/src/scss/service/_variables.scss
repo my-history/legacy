@@ -1,0 +1,60 @@
+//Fonts Define
+
+$M: 'Montserrat';
+$RS: 'Roboto Slab';
+$FAP: 'Font Awesome 5 Pro';
+
+
+$mainFont: quote($M);
+$subFont: quote($RS);
+$fapro: quote($FAP);
+
+//ThemeIvanovo Define
+
+$lightAccentIva: $blue-100;
+$accentIva: $blue-500;
+$darkAccentIva: $blue-700;
+$heavyAccentIva: $blue-900;
+
+$bodyBackgroundIva : $lightAccentIva;
+$textColorIva : $heavyAccentIva;
+$headerTitleIva: $accentIva;
+$navigationBackgroundIva: $darkAccentIva;
+
+$themeNameIva: '--themeIvanovo';
+
+//ThemeKostroma Define
+
+$lightAccentKos: $green-100;
+$accentKos: $green-500;
+$darkAccentKos: $green-700;
+$heavyAccentKos: $green-900;
+
+$bodyBackgroundKos : $lightAccentKos;
+$textColorKos : $heavyAccentKos;
+$headerTitleKos: $accentKos;
+$navigationBackgroundKos: $darkAccentKos;
+
+$themeNameKos: '--themeKostroma';
+
+//ThemeYaroslavl Define
+
+$lightAccentYar: $red-100;
+$accentYar: $red-500;
+$darkAccentYar: $red-700;
+$heavyAccentYar: $red-900;
+
+$bodyBackgroundKos : $lightAccentYar;
+$textColorKos : $heavyAccentYar;
+$headerTitleKos: $accentYar;
+$navigationBackgroundKos: $darkAccentYar;
+
+$themeNameYar: '--themeYaroslavl';
+
+//ThemeDark Define
+
+$dark-theme-text-color: #b8b8b8;
+$dark-theme-bg: #111;
+$dark-theme-dark-bg: #0c0c0c;
+
+$themeDarkName: '.Theme--dark';

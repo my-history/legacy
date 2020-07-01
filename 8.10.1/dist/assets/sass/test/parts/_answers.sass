@@ -1,0 +1,63 @@
+.answer
+	&:hover .answer__img
+		opacity: 1
+	transition: opacity 0.3s ease
+	cursor: pointer
+	box-sizing: border-box
+	&__holder
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+		margin: 5px
+		@media (max-width: 360px)
+			align-items: flex-start
+			justify-content: center
+			flex-direction: column
+		&[data-test-option="imageAnswerHolder"]
+			flex-direction: row
+			align-items: center
+			flex-wrap: wrap
+	
+	&__img
+		width: 300px
+		height: 250px
+		margin: 5px
+		border-radius: 5%
+		opacity: 0.7
+		transition: 0.3s ease
+		@media (max-width: 500px)
+			width: 100px
+			height: 70px
+		@media (max-width: 400px)
+			width: 90px
+			height: 60px
+	&--image
+		background-color: #fff
+		padding: 5px
+		margin: 5px
+		border-radius: 5%
+		@media (max-width: 500px)
+			padding: 2px
+
+	&--text
+		background: #708fb5
+		color: #fff
+		padding: 15px 5px
+		border-radius: 5px
+		margin: 10px
+		font-size: 1.4rem
+		font-family: $sub-font
+		width: 250px
+		text-align: center
+		@media (max-width: 500px)
+			width: 120px
+
+		@media (max-width: 360px)
+			background: #708fb5
+			width: 100%
+			color: #fff
+			font-weight: 700
+			font-size: 1.5rem
+			padding: 10px 5px
+			margin: 5px

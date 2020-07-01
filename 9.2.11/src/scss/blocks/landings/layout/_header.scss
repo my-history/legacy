@@ -1,0 +1,16 @@
+$block: '.Header';
+
+#{$block} {
+	height: 600px;
+	width: 100%;
+	text-align: center;
+	@include flexParent('col', 'c', 'c');
+
+	&#{$block}--themeKostroma {
+		background: url('/MyMotherland/dist/assets/images/landings/44/header-overlay.jpg') no-repeat cover center;
+	}
+
+	&#{$block}--themeYaroslavl {
+		background: url('/MyMotherland/dist/assets/images/landings/76/header-overlay.jpg') no-repeat cover center;
+	}
+}

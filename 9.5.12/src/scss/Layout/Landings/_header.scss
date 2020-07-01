@@ -1,0 +1,32 @@
+.webp .header {
+  background-image: url("../images/landings/common.webp");
+}
+
+.no-webp .header {
+  background-image: url("../images/landings/common.png");
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  position: relative;
+  height: 594px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 594px;
+    background: #000000;
+    opacity: 0.6;
+  }
+}

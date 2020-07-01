@@ -1,0 +1,11 @@
+.image-block
+	padding: 10px
+	float: left
+	@extend %mlamra
+	& img
+		width: 70%
+
+.image-caption
+	+font($sub-font, 16px, 400, #777, left, none, none, 1, 0)
+	&:before
+		+fa('\f077', 1rem, 1rem, 1rem, 1rem)

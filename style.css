@@ -1,0 +1,17 @@
+html,
+body {
+  font-family: Montserrat, serif;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.spacer {
+  margin: 30px;
+}
+
+a {
+  color: #333333;
+}

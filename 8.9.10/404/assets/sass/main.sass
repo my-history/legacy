@@ -1,0 +1,145 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:500,700;subset=cyrillic"
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic"
+
+
+
+
+	
+.row
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: space-between
+	
+.nav-holder
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: center
+
+.logo-holder
+	width: 220px
+	height: 30px
+	padding-top: 10px
+	padding-bottom: 90px
+	margin-top: 30px
+	display: flex
+	flex-direction: column
+	align-items: center
+	@media (max-width: 940px)
+		width: 100%
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+
+.navigation-holder
+	width: 800px
+	height: 30px
+	padding-top: 50px
+	padding-bottom: 90px
+	@media (max-width: 940px)
+		display: none
+	// &__active
+	// 	@media (max-width: 940px)
+	// 		display: flex
+	// 		flex-direction: column
+	// 		justify-content: center
+	// 		align-items: space-between
+	// 		position: fixed
+	// 		top: 0
+	// 		left: 0
+	// 		height: 100vh
+	// 		width: 100vw
+	// 		background-color: #7cc576
+	// 		opacity: .95
+
+.navigation-list
+	margin: 0
+	padding: 0
+	list-style-type: none
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	text-transform: uppercase
+	@media (max-width: 940px)
+		flex-direction: column
+		text-align: center
+		justify-content: space-around
+		align-items: center
+		height: 100%
+	&__list-item
+		padding-left: 30px
+		a
+			font-family: Montserrat
+			font-size: 14px
+			font-weight: 500
+			color: #777777
+			text-decoration: none
+			transition: .5s	ease-in-out
+			padding-bottom: 10px
+			@media (max-width: 940px)
+				color: #ffffff
+				font-size: 22px
+				
+			&:hover, &:focus, &:active
+				color: #2ab41f
+				border-bottom: 1px solid #7cc576
+				text-decoration: none
+				padding-bottom: 3px
+				outline: none
+				@media (max-width: 940px)
+					color: #ffffff
+			&:active
+				color: #f86900
+				border-bottom: 1px solid #f86900
+				text-decoration: none
+				padding-bottom: 3px
+				@media (max-width: 940px)
+					color: #ffffff
+
+
+.navigation-button
+	display: none
+	@media (max-width: 940px)
+		display: block
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+		background-color: #cccccc
+		color: #000000
+		text-align: center
+		text-decoration: none
+		text-transform: uppercase
+		letter-spacing: -1px
+		font-family: Montserrat
+		font-weight: 700
+		font-size: 18px
+		padding-top: 5px
+		padding-bottom: 5px
+		margin-bottom: 40px
+
+.error-holder
+	display: flex
+	flex-direction: row
+	justify-content: center
+
+.error
+	width: 70%
+	background-image: url(../img/carbon.png)
+	background-repeat: no-repeat
+	background-size: cover
+	color: #ffffff
+	font-size: 20px
+	font-family: 'Roboto Mono'
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	padding: 65px 25px
+	border-radius: 10px
+	& .red
+		color: red
+
+	& .green
+		color: green

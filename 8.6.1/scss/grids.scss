@@ -1,0 +1,127 @@
+@import "vars.scss";
+
+/*
+|				|
+|				|
+|	HEADER|
+|				|
+|				|
+					*/
+
+header {
+	width: 100%;
+	max-height: 8vh;
+	background-color: $accent;
+	&-grid {
+		grid-template-columns: 1fr 3fr 9fr;
+		grid-template-areas: "header-menu" "header-logo" "header-title";
+		&-item-menu {
+			grid-area: "header-menu";
+		}
+		&-item-logo {
+			grid-area: "header-logo";
+		}
+		&-item-title {
+			grid-area: "header-title";
+		}
+	}
+}
+/*
+|					|
+|					|
+|	ARTICLE	|
+|					|
+|					|
+					*/
+
+.article-grid {
+	grid-template-columns: 9fr 2.5fr .5fr;
+	grid-template-areas: "section" "aside" "space";
+}
+.section {
+	grid-area: "section";
+}
+.aside {
+	grid-area: "aside";
+	&-banner-title {
+		font-size: 18px;
+		border-bottom: 2px solid $accent;
+		color: $accent;
+		text-transform: uppercase;
+	}
+}
+
+.space {
+	grid-area: "space";
+}
+
+
+/*
+|								|
+|								|
+|	SOCIAL-LINKS	|
+|								|
+|								|
+								*/
+.social {
+	grid-gap: 10px;
+	grid-template-areas: "vk" "telegram" "yandex" "gmail";
+}
+
+.social-item:nth-child(1) {
+	margin-left: 100px;
+}
+
+.social-item {
+	width: 200px;
+	height: 200px;
+	// margin-left: auto;
+	// margin-right: auto;
+}
+
+.vk {
+	background-color: $vk;
+	color: $white;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 60px;
+	grid-area: "vk";
+	border-radius: 10px;
+}
+
+
+.telegram {
+	background-color: $telegram;
+	border: 2px solid $telegram;
+	color: $white;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 60px;
+	grid-area: "telegram";
+	border-radius: 10px;
+}
+
+
+
+.yandex {
+	background-color: $yandex;
+	border: 2px solid $yandex;
+	color: $yar;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 60px;
+	grid-area: "yandex";
+	border-radius: 10px;
+}
+
+
+.gmail {
+	background-color: $mail;
+	border: 2px solid $mail;
+	color: $white;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 60px;
+	grid-area: "gmail";
+	border-radius: 10px;
+}

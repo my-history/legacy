@@ -1,0 +1,41 @@
+.header.dark-theme,
+.header-button.dark-theme,
+.control.dark-theme,
+.contents.dark-theme,
+.alert.dark-theme {
+	background-color: var(--dark-theme-dark-bg);
+}
+
+article.dark-theme {
+	background: var(--dark-theme-bg);
+}
+
+.header-logo img.bb.dark-theme {
+	filter: grayscale(100%) invert(100%);
+}
+
+.#{$article-class-name}.dark-theme,
+.header-button i.dark-theme,
+.header-title h1.dark-theme,
+.control-option.dark-theme,
+.control-button.dark-theme,
+.image-block .caption.dark-theme,
+.image-block .caption.dark-theme:before,
+.contents.dark-theme *,
+.alert-text.dark-theme,
+.alert-button.dark-theme {
+	color: var(--dark-theme-text-color);
+}
+
+.alert-button.dark-theme {
+	border: 1px solid var(--dark-theme-text-color);
+}
+
+#{$quote-type}.#{$article-class-name}.dark-theme {
+	border-left: 2px solid var(--dark-theme-text-color);
+	color: var(--dark-theme-text-color);
+}
+
+#{$quote-type}.#{$poem-class-name}.dark-theme {
+	color: var(--dark-theme-text-color);
+}

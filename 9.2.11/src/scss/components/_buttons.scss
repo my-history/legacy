@@ -1,0 +1,60 @@
+$block: '.Button';
+
+#{$block} {
+	height: 60px;
+	width: 3rem;
+	padding: 20px 35px 20px 35px;
+	border-radius: 60px;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: $mainFont;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+
+	&#{$block+$themeNameIva} {
+		text-shadow: 0px 1px 1px $heavyAccentIva;
+
+		&#{$block}--default {
+			background: $accentIva;
+			color: $lightAccentIva;
+		}
+
+		&#{$block}--outline {
+			background: $lightAccentIva;
+			color: $accentIva;
+			border: 3px solid $accentIva
+		}
+	}
+
+	&#{$block+$themeNameKos} {
+		text-shadow: 0px 1px 1px $heavyAccentKos;
+
+		&#{$block}--default {
+			background: $accentKos;
+			color: $lightAccentKos;
+		}
+
+		&#{$block}--outline {
+			background: $lightAccentKos;
+			color: $accentKos;
+			border: 3px solid $accentKos
+		}
+	}
+
+	&#{$block+$themeNameYar} {
+		text-shadow: 0px 1px 1px $heavyAccentYar;
+
+		&#{$block}--default {
+			background: $accentYar;
+			color: $lightAccentYar;
+		}
+
+		&#{$block}--outline {
+			background: $lightAccentYar;
+			color: $accentYar;
+			border: 3px solid $accentYar
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.container
+	width: $container-width
+	margin-left: auto
+	margin-right: auto
+	@media (min-width: 5000px)
+		width: $retina-full-hd-container-width
+	@media (min-width: 2500px)
+		width: $retina-hd-container-width
+	@media (min-width: 2000px)
+		width: $retina-container-width
+	@media (max-width: 960px)
+		width: 100%
+		padding-left: $gutter * 2
+		padding-right: $gutter * 2
+
+	@media (max-width: 770px)
+		width: 100%
+		padding-left: $gutter
+		padding-right: $gutter
+
+.container-fluid
+	width: 100%
+.row
+	display: flex
+	flex-direction: row
+	@media (max-width: 770px)
+		flex-direction: column
+		align-items: center
+		justify-content: center

@@ -1,0 +1,24 @@
+.result {
+	font-family: var(--pfd);
+	font-weight: 700;
+	font-size: 2rem;
+  transform: translateY(-5px);
+} 
+
+.slash {
+	font-family: var(--pfd);
+  font-size: 1.9rem;
+}
+
+
+.questions {
+	font-family: var(--pfd);
+	font-size: 2rem;
+	vertical-align: sub;
+  transform: translateY(5px);
+}
+
+.text {
+	font-family: var(--pfd);
+  font-size: 1.9rem;
+}

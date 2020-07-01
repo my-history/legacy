@@ -1,0 +1,86 @@
+.l-dn {
+	display: none !important;
+}
+
+.l-landing {
+	color: #ffffff !important;
+	z-index: 3;
+}
+
+.l-fxww {
+	flex-wrap: wrap;
+}
+
+.u-z-content {
+	z-index: 100;
+}
+
+.u-z-header {
+	z-index: 200;
+}
+
+.u-z-header-content {
+	z-index: 300;
+}
+
+.u-z-settings {
+	z-index: 400;
+}
+
+.u-z-nav {
+	z-index: 500;
+}
+
+.t-italic {
+	font-style: italic;
+}
+
+.t-center {
+	text-align: center !important;
+}
+
+.t-right {
+	text-align: right !important;
+}
+
+.t-wsp {
+	&:before {
+		content: "\A";
+		white-space: pre;
+	}
+}
+
+.t-ttu {
+	text-transform: uppercase;
+}
+
+.w-margin {
+	margin-top: 120px;
+}
+
+.w-ml-20 {
+	margin-left: 20px;
+}
+
+.w-mr-20 {
+	margin-right: 20px;
+}
+
+.i-little {
+	width: 150px;
+	height: 150px;
+}
+
+.i-small {
+	width: 70px;
+	height: 70px;
+}
+
+.i-round {
+	border-radius: 50%;
+	margin-left: 20px;
+	@media (max-width: 1650px) {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-cli": "^2.0.1",
+    "gulp-color": "^0.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-wait": "^0.0.2",
+    "pump": "^3.0.0"
+  },
+  "name": "iandmymotherland",
+  "version": "8.10.1",
+  "description": "Educational web-site about local history of many cities of Russia",
+  "main": "index.js",
+  "repository": "https://github.com/daniilko0/motherland",
+  "author": "daniilko0",
+  "license": "CC BY-NC-SA v4.0",
+  "private": false
+}

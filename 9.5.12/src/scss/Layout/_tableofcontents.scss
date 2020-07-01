@@ -1,0 +1,48 @@
+.contents {
+	width: 350px;
+	height: 600px;
+	position: fixed;
+	top: 120px;
+	right: 20px;
+	background: #ffffff;
+	box-shadow: var(--main-shadow);
+	overflow-y: scroll;
+
+	details {
+		margin: 1rem;
+	}
+
+	summary {
+		font-weight: bold;
+		list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+		cursor: pointer;
+		user-select: none;
+		outline: none;
+	}
+
+	details[open] summary {
+		list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/down-arrow.svg);
+	}
+
+	summary::-webkit-details-marker {
+		background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+		color: transparent;
+	}
+
+	details[open] summary::-webkit-details-marker {
+		background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/down-arrow.svg);
+	}
+
+	ul {
+		list-style: none;
+		& li {
+			margin: 0.2rem;
+			 & a {
+				text-decoration: none;
+				color: var(--light-theme-text-color);
+				border-bottom: 1px solid var(--dark-theme-dark-bg);
+			 }
+		}
+	}
+
+}

@@ -1,0 +1,166 @@
+// variables
+$card-width: 350px
+$card-height: 500px
+$h-color: #fff
+$yellow: #D0BB57
+$txt-color: #DCE3E7
+
+
+// bg images places
+$square-dudin: '/MyMotherland/dist/assets/images/37/main/сards/dudin-square.jpg'
+$ascension: '/MyMotherland/dist/assets/images/37/main/сards/ascension-church.jpg'
+$red-church: '/MyMotherland/dist/assets/images/37/main/сards/church-of-icon-of-god-mother.jpg'
+$furmanov-memorial: '/MyMotherland/dist/assets/images/37/main/сards/furmanov-memorial.jpg'
+
+//bg images peoples
+$furmanov: '/MyMotherland/dist/assets/images/37/main/сards/furmanov-dm-andr.jpg'
+$drozdov-ni: '/MyMotherland/dist/assets/images/37/main/сards/drozdov-nik-ipa.jpg'
+$dudin: '/MyMotherland/dist/assets/images/37/main/сards/dudin-mich-aleks.jpg'
+$frunze: '/MyMotherland/dist/assets/images/37/main/сards/frunze-mich-vas.jpg'
+$juravlev-ov: '/MyMotherland/dist/assets/images/37/main/сards/juravlev-ol-vit.jpg'
+$trubnikov: '/MyMotherland/dist/assets/images/37/main/сards/trubnikov-dm-aleks.jpg'
+
+
+	
+
+
+.cards
+	display: flex
+	flex-direction: row
+	
+.blog-card
+	width: $card-width
+	height: $card-height
+	overflow: hidden
+	border-radius: 10px
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, .5)
+	text-align: center
+	position: relative
+	margin: 10px
+
+	&.square-dudin
+		background: url($square-dudin) no-repeat center
+	&.furmanov
+		background: url($furmanov) no-repeat center
+	&.red-church
+		background: url($red-church) no-repeat center
+	&.ascension
+		background: url($ascension) no-repeat center
+	&.furmanov-memorial
+		background: url($furmanov-memorial) no-repeat center
+	&.drozdov-ni
+		background: url($drozdov-ni) no-repeat center
+	&.dudin
+		background: url($dudin) no-repeat center
+	&.frunze
+		background: url($frunze) no-repeat center
+	&.juravlev-ov
+		background: url($juravlev-ov) no-repeat center
+	&.trubnikov
+		background: url($trubnikov) no-repeat center
+
+
+	&:hover
+		.card-info
+			opacity: 1
+			bottom: 120px
+		.color-overlay
+			background: rgba(84,104,110,0.8)
+
+.title-content
+	text-align: center
+	margin: 70px 0 0 0
+	position: absolute
+	z-index: 20
+	width: 100%
+	top: 0
+	left: 0
+	& h3
+		font-size: 20px
+		font-weight: 500
+		letter-spacing: 2px
+		color: $h-color
+		font-family: $main-font
+		margin-bottom: 0
+
+	& hr
+		width: 50px
+		height: 3px
+		margin: 20px auto
+		border: 0
+		background: $yellow
+.intro
+	width: 170px
+	margin: 10px auto
+	color: $txt-color
+	font-family: $sub-font
+	font-size: 13px
+	font-style: italic
+	line-height: 18px
+
+.card-info
+	width: 100%
+	position: absolute
+	bottom: 100px
+	left: 0
+	margin: 0 auto
+	padding: 0 50px
+	color: $txt-color
+	font-family: $sub-font
+	font-size: 16px
+	line-height: 24px
+	z-index: 20
+	opacity: 0
+	transition: bottom .3s, opacity .3s cubic-bezier(.33,.66,.66,1)
+
+.card-button
+	display: block
+	text-decoration: none
+	border: 2px solid #fff
+	padding: 5px 10px
+	color: #ffffff
+	width: 70%
+	margin:
+		left: auto
+		right: auto
+		top: 5px
+		bottom: 5px
+
+	&:hover
+		color: #ffffff
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color-overlay
+	background: rgba(84,104,110,0.4)
+	width: $card-width
+	height: $card-height
+	position: absolute
+	z-index: 10
+	top: 0
+	left: 0
+	transition: background .3s cubic-bezier(.33,.66,.66,1)
+.gradient-overlay
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%)
+	background-image: -moz-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%)
+	background-image: -o-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%)
+	background-image: linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%)
+	width: $card-width
+	height: $card-height
+	position: absolute
+	top: 350px
+	left: 0
+	z-index: 15

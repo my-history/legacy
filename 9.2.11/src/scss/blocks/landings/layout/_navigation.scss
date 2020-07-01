@@ -1,0 +1,139 @@
+$block: '.Navigation';
+
+#{$block} {
+	@include flexParent('', 'sb', 'c');
+	padding: 0 20px;
+
+	#{$block}-logo {
+		width: 360px;
+
+		@media (max-width: 940px) {
+			align-self: flex-start;
+			width: auto;
+
+			& img {
+				width: 60px;
+				height: 60px;
+
+				@media (max-width: 940px) {
+					width: 70px;
+					height: 70px;
+				}
+			}
+		}
+	}
+
+	#{$block}-holder {
+		width: 700px;
+		height: 30px;
+		padding: 50px 0 90px;
+
+		@media (max-width: 940px) {
+			display: none
+		}
+	}
+
+	#{$block}-list {
+		@include flexParent('', 'fe', '');
+		list-style: none;
+
+		@media (max-width: 940px) {
+			@include flexParent('c', 'c', 'c');
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 2rem;
+		}
+	}
+
+	#{$block}-closeButton {
+		color: #ffffff;
+		display: none;
+
+		@media (max-width: 940px) {
+			display: block;
+			position: fixed;
+			top: 55px;
+			right: 20px;
+			font-size: 3rem;
+		}
+
+		&:hover {
+			animation: faSpin 1s 1 ease
+		}
+	}
+
+	#{$block}-item {
+		margin-left: 20px;
+		font-family: $mainFont;
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: #777;
+		outline: none;
+		border-bottom: 1px solid transparent;
+		transition: 0.7s ease-in-out;
+		cursor: pointer;
+
+		@media (max-width: 940px) {
+			color: #ffffff;
+			border: none;
+			font-size: 2rem;
+			padding: 3rem;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			padding-bottom: 3px;
+
+			@media (max-width: 940px) {
+				color: #ffffff;
+				border-bottom: none;
+				padding: 3rem;
+			}
+		}
+
+		&#{$block}--themeIvanovo {
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $accentIva;
+				border-color: $darkAccentIva;
+			}
+
+		}
+
+		&#{$block}--Kostroma {
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $accentKos;
+				border-color: $darkAccentKos;
+			}
+		}
+
+		&#{$block}--Yaroslavl {
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $accentYar;
+				border-color: $darkAccentYar;
+			}
+		}
+
+	}
+
+	#{$block}-mobileButton {
+		display: none;
+
+		@media (max-width: 940px) {
+			display: flex;
+			justify-content: flex-end;
+			font-size: 3rem;
+			color: #000000;
+			text-decoration: none;
+		}
+	}
+}

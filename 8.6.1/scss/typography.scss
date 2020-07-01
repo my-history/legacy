@@ -1,0 +1,83 @@
+@import "vars.scss";
+@import "fonts.scss";
+
+.menu-link {
+	color: $white;
+	text-decoration: none;
+}
+.menu-title {
+	color: $white;
+}
+.header-title {
+	color: $white;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: raleway-example,sans-serif;
+	text-transform: uppercase;
+}
+.first-title {
+	overflow: hidden;
+	text-align: center;
+	&:after, &:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		max-height: 4px;
+		background-color: $accent;
+		position: relative;
+	}
+	&:before {
+		margin-left: -100%;
+		left: -14px;
+		padding-left: 14px;
+	}
+	&:after {
+		margin-right: -100%;
+		right: -14px;
+		padding-right: 14px;
+	}
+	&:after, &:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		max-height: 4px;
+		background-color: $daccent;
+		position: relative;
+	}
+}
+.second-title {
+	border-left: 2px solid $accent;
+	color: $accent;
+	padding-left: 15px;
+	margin-left: 20px;
+}
+p.section-content {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+}
+.link {
+	display: inline-block;
+	color: $laccent;
+	line-height: 1;
+	text-decoration: none;
+	padding-bottom: 1px;
+	cursor: pointer;
+	&:after {
+		background-color: $laccent;
+		display: block;
+		content: "";
+		height: 2px;
+		width: 100%;
+		transition: all .5s ease;
+	}
+	&:focus:after, &:hover:after {
+		width: 0%;
+	}
+	&:hover {
+		text-decoration: none;
+		color: $black;
+	}
+}

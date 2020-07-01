@@ -1,0 +1,60 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab&amp;subset=cyrillic";
+.logo-heading {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: -2px;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+html, body {
+  font-family: "Roboto Slab";
+  background-color: #f5f5f5; }
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: 0.7s ease-in-out; }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #80bdff; }
+
+blockquote.quote {
+  margin-top: 20px;
+  border-left: 2px solid #444;
+  padding-left: 15px;
+  font-size: 18px; }
+
+.page-title {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700; }
+
+a.header-link {
+  display: flex;
+  justify-content: flex-start; }
+
+.img-caption {
+  font-size: 12px; }
+
+.color-y {
+  color: #ffc618; }
+
+.content-link {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 1px solid #007bff;
+  transition: 0.4s ease-in-out; }
+  .content-link:hover, .content-link:focus, .content-link:accent {
+    color: #000000;
+    border-bottom: none; }
+
+.bg-accent {
+  background-color: #007bff; }
+
+#header {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
+
+/*# sourceMappingURL=main.css.map */

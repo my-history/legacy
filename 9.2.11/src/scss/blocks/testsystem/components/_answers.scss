@@ -1,0 +1,88 @@
+$block: '.Answer';
+
+#{$block} {
+	transition: opacity 0.3s ease;
+	cursor: pointer;
+	box-sizing: border-box;
+
+	#{$block}s-holder {
+		@include flexParent('', 'c', '');
+		flex-wrap: wrap;
+		margin: 5px;
+
+		@media (max-width: 360px) {
+			@include flexParent('c', 'c', '');
+		}
+
+		&[data-test-option="Answers-holder--typeImage"] {
+			@include flexParent('', '', 'c');
+			flex-wrap: wrap;
+		}
+	}
+
+	#{$block}--typeImage {
+		background-color: #fff;
+		padding: 5px;
+		margin: 5px;
+		border-radius: 5%;
+
+		@media (max-width: 500px) {
+			padding: 2px;
+		}
+
+		& #{$block}-image {
+			width: 300px;
+			height: 250px;
+			margin: 5px;
+			border-radius: 5%;
+			opacity: 0.7;
+			transition: 0.3s ease;
+
+			@media (max-width: 500px) {
+				width: 100px;
+				height: 70px;
+			}
+
+			@media (max-width: 400px) {
+				width: 90px;
+				height: 60px;
+			}
+		}
+	}
+
+	#{$block}--typeText {
+		color: #fff;
+		padding: 15px 5px;
+		border-radius: 5px;
+		margin: 10px;
+		font-size: 1.4rem;
+		font-family: $subFont;
+		width: 250px;
+		text-align: center;
+
+		&#{$block}--themeIvanovo {
+			background: $blue-400;
+		}
+
+		&#{$block}--themeKostroma {
+			background: $green-400;
+		}
+
+		&#{$block}--themeYaroslavl {
+			background: $red-400;
+		}
+
+		@media (max-width: 500px) {
+			width: 120px;
+		}
+
+		@media (max-width: 360px) {
+			width: 100%;
+			color: #fff;
+			font-weight: 700;
+			font-size: 1.5rem;
+			padding: 10px 5px;
+			margin: 5px;
+		}
+	}
+}

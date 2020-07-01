@@ -1,0 +1,87 @@
+.navigation
+	transform: translateX(-100%)
+	transition: .7s ease
+	&--active
+		position: fixed
+		top: 0
+		left: 0
+		transform: translateX(0)
+		width: 80%
+		height: 90%
+		display: flex
+		flex-direction: column
+		background-color: $dark-accent
+		list-style-type: none
+		margin: 0
+		padding: 20px
+		z-index: 201
+	&__button
+		@if $colored-navbar == false
+			color: $dark-accent
+		@else
+			color: #fff
+		font-size: 30px
+		cursor: pointer
+		outline: none
+		background-color: none
+		border-bottom: none
+	&__link
+		font-size: 1.7rem
+		font-family: $main-font
+		padding: 10px
+		color: #ffffff
+	&__item
+		color: #ffffff
+		text-decoration: none
+		display: block
+		transition: .7s ease-in
+		width: 100%
+		text-align: left
+		&:hover
+			color: #ffffff
+			&:after
+				content: ']'
+				color: #ffffff
+				font-weight: 700
+				margin-left: 10px
+				display: inline-block
+
+
+	&__close-btn
+		position: fixed
+		top: 20px
+		right: 20px
+		font-size: 4rem
+
+	&__social
+		list-style: none
+		padding: 0
+		color: #ffffff
+		font-family: $main-font
+		font-size: 1.7rem
+		padding: 10px
+		& i
+			padding: 5px
+
+.social__items
+	padding-top: 20px
+	font-size: 1.9rem
+	& a
+		color: #ffffff
+		text-decoration: none
+	& i
+		padding: 5px
+.copyright__items
+	padding-top: 20px
+	font-size: 2.2rem
+	& a
+		color: #ffffff
+		text-decoration: none
+	& i
+		padding: 5px
+
+	& span
+		font-size: 1.6rem
+
+.license__link
+	border-bottom: 2px solid #fff

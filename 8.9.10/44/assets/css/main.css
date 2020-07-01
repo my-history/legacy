@@ -1,0 +1,28 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab&amp;subset=cyrillic";
+
+body {position: relative;height: 100%;width: 100%;margin: 0;padding: 0;}
+.soon {
+	height: 100vh !important;
+	background-image: url(/44/assets/img/main/kostroma.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	font-family: Montserrat;
+	position: relative;
+	overflow: hidden;
+
+
+}
+
+.soon-content {
+	display: flex;
+	width: 620px;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+	text-align: center;
+}

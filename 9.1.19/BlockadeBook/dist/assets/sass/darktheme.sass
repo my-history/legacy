@@ -1,0 +1,65 @@
+$dark-theme-text-color: #b8b8b8
+$dark-theme-bg: #111
+$dark-theme-dark-bg: #0c0c0c
+
+@import "base/colors"
+@import "custom/colors/colors"
+@import "custom/grid/grid"
+	
+@import "bases"
+
+body
+	background: $dark-theme-bg
+	
+.last-change-data
+	+font($main-font, 1.5rem, 400, $dark-theme-text-color, center, none, none, 0, 0)
+
+.author-data
+	+font($main-font, 1.5rem, 400, $dark-theme-text-color, center, none, none, 0, 0)
+
+.control-panel__trigger
+	background: $dark-theme-dark-bg
+	color: $dark-theme-text-color
+	&:hover
+		color: $dark-theme-text-color
+
+.controllers div
+	background: $dark-theme-bg
+	color: $dark-theme-text-color
+	+b("", 1px, solid, $dark-theme-text-color)
+
+.header
+	color: if($colored-navbar, $accent, $dark-theme-text-color)
+	background: if($colored-navbar, $accent, $dark-theme-bg)
+	& > .navigation__button
+		color: if($colored-navbar, #000, $dark-theme-text-color)
+	&__title
+		+font($main-font, 20px, 500, if($colored-navbar, $dark-accent, $dark-theme-text-color), left, none, uppercase, 0, 0)
+	& img
+		filter: invert(100%)
+	&--scrolling
+		background-color: $dark-theme-dark-bg
+		& > .navigation__button, .header__title
+			color: if($colored-navbar, #000, $dark-theme-text-color)
+
+.article-title
+	+font($main-font, 3rem, 700, $dark-theme-text-color, center, none, none, 1, 0)
+
+.article-subtitle
+	+font($sub-font, 1.7rem, 400, $dark-theme-text-color, center, none, none, 1, 0)
+
+.title
+	+font($main-font, 2.8rem, 500, $dark-theme-text-color, left, none, none, 1, 0)
+
+.subtitle
+	+font($sub-font, 1.6rem, 300, $dark-theme-text-color, left, none, none, 1, 0)
+
+p
+	+font($sub-font, 1.7rem, 400, $dark-theme-text-color, left, none, none, 1.3, 0)
+
+a
+	+font($sub-font, 1.6rem, 300, $dark-theme-text-color, left, none, none, 1, 0)
+
+blockquote
+	+font($main-font, 1.7rem, 400, $dark-theme-text-color, left, none, none, 1, 0)
+	+b(left, 1px, solid, $dark-theme-dark-bg)

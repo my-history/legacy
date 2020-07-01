@@ -1,0 +1,21 @@
+$block: '.Plug';
+
+#{$block} {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 100;
+		background-color: #ededed;
+		width: 700px;
+		height: 700px;
+		border-radius: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		display: none;
+		transition: .7s ease-in;
+		@media (max-width: 710px) {
+				width: 80%;
+				height: 60vh;
+		}
+}

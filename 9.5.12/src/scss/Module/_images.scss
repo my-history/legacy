@@ -1,0 +1,70 @@
+.image-block {
+
+	width: 300px;
+
+	.image {
+
+		&.portrait {
+			height: 300px;
+		}
+
+		&.landscape {
+			height: 200px;
+		}
+
+	}
+
+	.caption {
+		font-family: var(--lato);
+		font-weight: 500;
+		font-size: 1.4rem;
+
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+
+		&:before {
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 300;
+			content: "\f077";
+
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	&.left {
+		float: left;
+		margin-right: 20px;
+		margin-left: 20px;
+
+		@media (max-width: 600px) {
+			float: none;
+		}
+	}
+
+	&.right {
+		float: right;
+		margin-left: 20px;
+		margin-right: 40px;
+
+		@media (max-width: 600px) {
+			float: none;
+		}
+	}
+
+	&.center {
+		margin-left: auto;
+		margin-right: auto;
+
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}
+
+.image-gallery {
+	display: grid;
+	grid-auto-flow: dense;
+	gap: 1rem;
+}

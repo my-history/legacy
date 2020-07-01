@@ -1,0 +1,34 @@
+.header
+	width: 100%
+	transition: .7s ease
+	z-index: 200
+	color: if($colored-navbar, #fff, $accent)
+	background: if($colored-navbar, $accent, #fff)
+	+p(10px, 10px, 30px, 30px)
+	+flex-parent(row, flex-start, center)
+	&__logo
+		width: 10%
+		margin-right: 40px
+		@media (max-width: $container-width)
+			width: 90%
+		& img
+			width: 150px
+			height: 70px
+
+	&__title
+		width: 85%
+		+font($main-font, 20px, 500, if($colored-navbar, #fff, $dark-accent), left, none, uppercase, 0, 0)
+		@media (max-width: $container-width)
+			display: none
+
+	&--scrolling
+		width: 100%
+		background-color: #ffffff
+		position: fixed
+		top: 0
+		left: 0
+		transition: .7s ease
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20)
+		opacity: if($colored-navbar, 0.7, 1)
+		& > .navigation__button, .header__title
+			color: if($colored-navbar, #000, $dark-accent)

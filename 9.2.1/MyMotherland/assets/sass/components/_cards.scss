@@ -1,0 +1,122 @@
+$block: '.Card';
+
+#{$block} {
+	@include flexParent();
+	width: 500px;
+	height: 300px;
+	margin: 30px;
+	border-radius: 15px;
+	align-items: center;
+	background: #ffffff;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14),
+		0 2px 2px 0 rgba(0, 0, 0, 0.12),
+		0 1px 3px 0 rgba(0, 0, 0, 0.20);
+
+	@media (max-width: 1650px) {
+		@include flexParent('c','c', '');
+		width: 300px;
+		height: 500px;
+	}
+
+	@media (max-width: 1030px) {
+		width: 200px;
+		height: 400px;
+	}
+
+	@media (max-width: 766px) {
+		width: 300px;
+		height: 500px;
+	}
+
+	@media (max-width: 499px) {
+		width: 400px;
+	}
+
+	@media (max-width: 470px) {
+		width: 300px;
+	}
+
+	@media (max-width: 370px) {
+		width: 200px;
+		height: 350px;
+	}
+
+	#{$block}-image {
+		height: 200px;
+		width: 200px;
+		margin: 10px 30px 10px 30px;
+		align-self: center;
+
+		@include media {
+			height: 200px;
+			margin: 20px 10px 20px 10px;
+		}
+
+		@media (max-width: 1030px) {
+			width: 100px;
+			height: 100px;
+		}
+
+		@media (max-width: 766px) {
+			width: 200px;
+			height: 200px;
+		}
+
+		@media (max-width: 370px) {
+			width: 70px;
+			height: 70px;
+			margin: 0;
+
+		}
+	}
+
+	#{$block}-text {
+		@include flexParent('c', 'c', 'c');
+		align-self: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		height: 100%;
+
+		@include media {
+			align-self: center;
+			margin: 0;
+		}
+	}
+
+	#{$block}-title {
+		font-family: $mainFont, Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		margin: 20px auto;
+	}
+
+	#{$block}-description {
+		font-family: $subFont, Georgia, 'Times New Roman', Times, serif;
+		font-size: 18px;
+		text-align: center;
+		width: 80%;
+	}
+
+	#{$block}-button {
+		border: 2px solid;
+		font-family: $subFont, Georgia, 'Times New Roman', Times, serif;
+		font-size: 16px;
+		padding: 10px 20px;
+		margin: 10px;
+		color: #222222;
+		text-decoration: none;
+
+		&#{$block+$themeNameIva} {
+			border-color: $darkAccentIva;
+		}
+
+		&#{$block+$themeNameKos} {
+			border-color: $darkAccentKos;
+		}
+
+		&#{$block+$themeNameYar} {
+			border-color: $darkAccentYar;
+		}
+	}
+}

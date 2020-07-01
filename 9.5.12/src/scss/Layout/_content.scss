@@ -1,0 +1,45 @@
+article {
+	padding-top: 20px;
+	padding-bottom: 140px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+section {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.text-block {
+	padding: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+#vk_groups {
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,140 @@
+<!--
+	I and my Motherland
+	Copyright 2017-2018 daniilko0 & co.
+	Licensed by CC-BY-NC-SA v4.0
+	Version 8.10.1
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<link rel="stylesheet" href="../../assets/libs/grid/grid.css">
+
+		<link rel="stylesheet" href="../../assets/css/test/37/test37.css">
+		<link rel="stylesheet" href="../../assets/libs/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="../../assets/libs/animate/animate.css">
+		<link rel="shortcut icon" type="image/png" href="../../assets/images/37/logo.png">
+		<title>Я и моя Родина</title>
+
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="header__logo">
+				<img src="../../assets/images/37/logo.png" alt="logo">
+			</div>
+			<div class="header__title">Я и моя родина</div>
+			<a href="javascript://0" class="navigation__button" id="trigger">
+				<i class="fal fa-bars"></i>
+			</a>
+		</div>
+		<ul class="navigation" id="navigation">
+			<li class="navigation__link navigation__close-btn" id="close-menu">
+				<i class="fal fa-times"></i>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37" class="navigation__item home"></a>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37/теория/известные-личности" class="navigation__item famous"></a>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37/теория/важные-даты" class="navigation__item dates"></a>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37/теория/улицы-края" class="navigation__item streets "></a>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37/теория/вторая-мировая" class="navigation__item ww2"></a>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37/тест/" class="navigation__item test"></a>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37/информация/о-проекте" class="navigation__item about"></a>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37/информация/благодарности" class="navigation__item thanks"></a>
+			</li>
+			<li class="navigation__link">
+				<a href="../../37/информация/источники" class="navigation__item sources"></a>
+			</li>
+			<ul class="navigation__social">
+				<li><i class="fal fa-copyright"></i>2017-2018 Голубев Даниил</li>
+				<li class="social__items">
+					<a href="https://vk.com/iandmymotherland">
+						<i class="fab fa-vk"></i>
+					</a>
+					<a href="https://instagram.com/daniilko0">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="copyright__items">
+					<i class="fab fa-creative-commons"></i>
+					<i class="fab fa-creative-commons-by"></i>
+					<i class="fab fa-creative-commons-nc"></i>
+					<i class="fab fa-creative-commons-sa"></i>
+					<br>
+					<span>Все материалы, предоставленные на данном сайте лицензированы по <a class="license__link" href="../../37/информация/лицензия/">Creative Commons BY-NC-SA 4.0</a></span>
+				</li>
+			</ul>
+		</ul>
+
+		<div class="test__wrapper">
+			<div class="test__start" data-test-role="startScreen">
+				<div class="article-title">Тест по истории Ивановской области</div>
+				<div class="article-subtitle">Включает 20 вопросов по Фурманову</div>
+				<a class="test__button" href="javascript://0" data-test-role="startTestButton">Начать тест</a>
+			</div>
+
+			<div class="test__preloader" data-test-role="loading">
+				<div class="fal fa-spinner fa-spin fa-7x"></div>
+			</div>
+
+			<div class="test__frame" data-test-role="testScreen">
+				<div class="article-title" data-test-role="questionTitle"></div>
+				<div class="article-subtitle" data-test-role="questionText"></div>
+
+				<div class="question__image-inner" data-test-role="qImgInner"></div>
+
+				<div class="answer__holder" data-test-role="answersHolder">
+
+					<div class="answer" data-test-role="answer0Holder"></div>
+					<div class="answer" data-test-role="answer1Holder"></div>
+					<div class="answer" data-test-role="answer2Holder"></div>
+					<div class="answer" data-test-role="answer3Holder"></div>
+
+				</div>
+
+			</div>
+
+			<div class="test__finish" data-test-role="finishScreen">
+
+				<div class="article-title">Тест завершен!</div>
+
+				<div>
+					<div class="result" data-test-role="result"></div>
+					<div class="slash" data-test-role="slash">/</div>
+					<div class="questions" data-test-role="questions"></div>
+					<div class="text">&nbsp; правильных ответов</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<script src="../../assets/js/libs.js"></script>
+		<script src="../../assets/libs/shuffle/shuffle.js"></script>
+		<script src="../../assets/js/theory/common.js"></script>
+		<script src="../../assets/js/test/testV3.js"></script>
+		<script src="../../assets/js/theory/menuFilling.js"></script>
+	</body>
+
+</html>

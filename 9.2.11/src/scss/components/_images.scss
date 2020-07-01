@@ -1,0 +1,22 @@
+$block: '.ImageBlock';
+
+#{$block} {
+	padding: 1rem;
+	float: left;
+	#{$block}-caption {
+		font-family: $subFont;
+		font-size: 1.6rem;
+		color: #777;
+		font-weight: 400;
+		&:before {
+			@include fa('\f077', 1rem);
+		}
+	} 
+	img.portrait {
+		height: 400px;
+	}
+
+	img.landscape {
+		
+	}
+}

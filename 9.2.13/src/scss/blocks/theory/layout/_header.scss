@@ -1,0 +1,107 @@
+$block: '.Header';
+
+
+#{$block} {
+	@include flexParent('', '', 'c');
+	width: 100%;
+	height: 100px;
+	padding: 10px 30px 10px 30px;
+	background: #ffffff;
+	transition: 0.7s ease;
+	z-index: 200;
+
+	&#{$block+$themeNameIva} {
+		color: $accentIva;
+	}
+
+	&#{$block+$themeNameKos} {
+		color: $accentKos;
+	}
+
+	&#{$block+$themeNameYar} {
+		color: $accentYar;
+	}
+
+	#{$block}-logo {
+		width: 10%;
+
+		& img {
+			width: 100px;
+			margin-right: 20px;
+		}
+
+		&#{$themeDarkName} {
+			& img {
+				filter: invert(100%)
+			}
+		}
+
+		@media (max-width: 960px) {
+			width: 90%
+		}
+	}
+
+	#{$block}-title {
+		font-size: 20px;
+		font-family: $mainFont;
+		text-transform: uppercase;
+		font-weight: 500;
+		width: 85%;
+
+		&#{$themeDarkName} {
+			@include font($mainFont, 20px, 500, $dark-theme-text-color, left, none, uppercase, 0, 0)
+
+		}
+
+		@media (max-width: 960px) {
+			display: none;
+		}
+	}
+
+	#{$block}-navigationTrigger {
+
+		font-size: 3rem;
+		cursor: pointer;
+		outline: none;
+		background: none;
+		border-bottom: none;
+
+		&#{$block+$themeNameIva} {
+			color: $accentIva;
+		}
+
+		&#{$block+$themeNameKos} {
+			color: $accentKos;
+		}
+
+		&#{$block+$themeNameYar} {
+			color: $accentYar;
+		}
+
+		&#{$themeDarkName} {
+			color: $dark-theme-text-color;
+		}
+
+		&:before {
+			@include fa("\f0c9")
+		}
+	}
+
+	&.is-scrolling {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		transition: .7s ease;
+		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+
+		&#{$themeDarkName} {
+			background-color: $dark-theme-dark-bg;
+		}
+	}
+
+	&#{$themeDarkName} {
+		color: $dark-theme-text-color;
+		background: $dark-theme-dark-bg;
+	}
+}

@@ -1,0 +1,34 @@
+@mixin fa($sym:'\f2b4', $p:1rem) {
+	font-family: $FAP;
+	font-weight: 300;
+	content: $sym;
+	padding: $p;
+}
+
+@mixin media () {
+	@media (max-width: 960px) {
+		@content;
+	}
+}
+
+@mixin flexParent ($dir:'r', $just:'fs', $align:'fs') {
+	@if $dir=='r' {$dir: row}
+	@else if $dir=='c' {$dir: column}
+	@else {$dir: row}
+	@if $just=='c' {$just: center}
+	@else if $just=='sa' {$just: space-around}
+	@else if $just=='sb'{$just: space-between}
+	@else if $just=='fs' {$just: flex-start}
+	@else if $just=='fe' {$just: flex-end}
+	@else {$just: flex-start}
+	@if $align=='c' {$align: center}
+	@else if $align=='sa' {$align: space-around}
+	@else if $align=='sb' {$align: space-between}
+	@else if $align=='fs' {$align: flex-start}
+	@else if $align=='fe' {$align: flex-end}
+	@else {$align: flex-start}
+	display: flex;
+	flex-direction: $dir;
+	justify-content: $just;
+	align-items: $align;
+}

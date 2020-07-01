@@ -1,0 +1,30 @@
+.button
+	display: inline-block
+	height: 6rem
+	width: 30rem
+	background-color: $accent
+	text-shadow: 0px 1px 1px $dark-accent
+	+font($main-font, 16px, 700, $grey-100, center, none, uppercase, 0, 0)
+	+p(2rem, 2rem, 35px, 35px)
+	+brs(6rem)
+
+.button-outline
+	display: inline-block
+	height: 6rem
+	width: 30rem
+	background-color: $grey-100
+	text-shadow: 0px 1px 1px $dark-accent
+	+font($main-font, 16px, 700, $accent, center, none, uppercase, 0, 0)
+	+p(2rem, 2rem, 35px, 35px)
+	+brs(6rem)
+	+b("", 3px, solid, $accent)
+
+.link
+	transition: .7s ease-in-out
+	+font($sub-font, 1.5rem, 400, $accent, left, none, none, 0 ,0)
+	+b("bottom", 1px, solid, $dark-accent)
+	+p(0, 5px, 0, 0)
+	&:hover, &:active, &:focus
+		outline: none
+		+font($sub-font, 1.5rem, 400, $dark-accent, left, none, none, 0, 0)
+		+p(0, 1px, 0, 0)

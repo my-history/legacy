@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Моя Родина</title>
+  <link rel="shortcut icon" href="dist/images/mm/logoday.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="dist/css/landings.css">
+</head>
+
+<body>
+
+    <div class="header" id="header">
+      <div class="navigation">
+        <div class="navigation-logo l-landing">
+          <img src="dist/images/mm/logoday.png" alt="logo">
+        </div>
+      </div>
+      <h1 class="a l-landing t-ttu">Моя Родина</h1>
+      <h4 class="a l-landing">Образовательный историко-краеведческий сайт</h4>
+      <p class="l-landing">г. Старица.</p>
+    </div>
+
+    <section id="projects">
+      <h1 class="a">Проекты</h1>
+      <div class="card-set">
+        <div class="card">
+          <img src="dist/images/bb/logo.png" alt="logo_bb" class="card-image">
+          <div class="card-text">
+            <div class="card-title">Блокадная книга</div>
+            <div class="card-description">Удобная электронная версия одноименной книги Даниила Гранина</div>
+            <a href="блокадная-книга" class="card-button">Перейти</a>
+          </div>
+        </div>
+  
+        <div class="card">
+          <img src="dist/images/mm/logoday.png" alt="logo_mm" class="card-image">
+          <div class="card-text">
+            <div class="card-title">Моя Родина</div>
+            <div class="card-description">Образовательный историко-краеведческий веб-сайт</div>
+            <a href="моя-родина" class="card-button">Перейти</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+
+      <div class="container" id="description">
+        <h1 class="a">О проекте</h1>
+        <p class="a">
+          "Моя Родина" – это образовательный историко-краеведческий веб-сайт, разрабатываемый для того, чтобы поднять
+          уровень знаний жителей России об истории своей страны. О людях, сделавших отдельные части нашей необъятной
+          Родины такими уникальными, о зданиях и памятных сооружениях, посмотреть на которые съезжаются со всего мира, о
+          самых неприметных улицах, о которых знает не каждый местный житель и о том, как Вторая мировая война изменила
+          жизнь всей страны. Все эти тезисы сможет раскрыть проект "Моя Родина".
+        </p>
+        <p class="a">В настоящее время ведется работа над материалами по Ивановской области, в планах <s>захватить</s> посетить с проектом Ярославскую и Костромскую области</p>
+        <p class="a">Для удобства восприятия весь материал бережно разделен на четыре раздела: "Великая война", "Важные даты", "Известные личности" и "Улицы края". Каждый из разделов содержит максимально полную и достоверную информацию по предмету.</p>
+        <p class="a">Для проверки полученных во время изучения сайта знаний предусмотрена самописная тестовая система - Examinest</p>
+
+      </div>
+
+    </section>
+
+    <section>
+      <div class="container" id="chronicle">
+        <h1 class="a">Летопись</h1>
+        <div id="vk_groups"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container" id="dev">
+        <h1 class="a">Разработка</h1>
+        <div class="card-set">
+          <div class="card">
+            <img src="dist/images/mm/logoday.png" alt="" class="card-image">
+            <div class="card-text">
+              <div class="card-title">
+                motherland
+              </div>
+              <div class="card-description">
+                <p >@daniilko0</p>
+              </div>
+              <a class="card-button" href="https://gitlab.com/daniilko0/motherland" target="__blank">
+                <i class="fab fa-gitlab"></i>
+                Репозиторий
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="a">
+        With <i class="fal fa-heart"></i> and <i class="fal fa-coffee-togo"></i> by daniilko0 and contributors. 2017 - <span
+          id="show-year"></span>
+      </p>
+    </section>
+
+    <script src="dist/js/common.js"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+    <script type="text/javascript">
+      VK.Widgets.Group("vk_groups", {
+        mode: 3,
+        width: "300"
+      }, 165695364);
+    </script>
+    <script>
+      let year = new Date().getFullYear()
+      document.querySelector('#show-year').innerHTML = year
+    </script>
+
+</body>
+
+</html>

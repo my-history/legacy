@@ -1,0 +1,24 @@
+// Settings
+
+.container
+	width: $container-width //Change it, if you need in "services/_variables.sass"
+	margin-left: auto
+	margin-right: auto
+	@media (max-width: 770px)
+		width: 100%
+		padding-left: $gutter //Change it, if you need in "services/_variables.sass"
+		padding-right: $gutter
+
+	@media (max-width: 990px)
+		width: 100%
+		padding-left: $gutter * 2
+		padding-right: $gutter *2
+
+.container-fluid
+	width: 100%
+
+.row
+	display: flex
+	flex-direction: row
+	@media (max-width: 770px)
+		flex-direction: column

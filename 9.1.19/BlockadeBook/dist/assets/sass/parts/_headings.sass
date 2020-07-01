@@ -1,0 +1,31 @@
+.article-title
+	+font($main-font, 30px, 700, #000, center, none, none, 1, 0)
+	+p(30px, 30px, 30px, 30px)
+
+.article-subtitle
+	+font($main-font, 20px, 600, #000, center, none, none, 1, 0)
+
+.title
+	+font($main-font, 28px, 500, #000, left, none, none, 1, 0)
+	+p(15px, 15px, 15px, 15px)
+
+
+.subtitle
+	+font($sub-font, 16px, 300, #777, left, none, none, 1, 0)
+	+p(15px, 15px, 15px, 15px)
+
+
+p
+	+font($sub-font, 1.7rem, 400, #000, left, none, none, 1.3, 0)
+	+p(10px, 12px, 20px, 20px)
+	@media (max-width: 48em)
+		font-size: 1.2rem
+	@media (max-width: 36em)
+		font-size: 1rem
+
+a
+	+font($sub-font, 16px, 300, $accent, left, none, none, 1, 0)
+	+b(bottom, 1px, solid, $dark-accent)
+	transition: .3s ease-in
+	&:hover
+		color: $dark-accent

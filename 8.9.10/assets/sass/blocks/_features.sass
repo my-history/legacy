@@ -1,0 +1,24 @@
+.features
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-around
+	@media (max-width: 940px)
+		flex-direction: column
+	.feature
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		& .title
+			font-family: 'Montserrat'
+			font-weight: 700
+			font-size: 2rem
+		& .text
+			font-family: 'Roboto Slab'
+			font-weight: 500
+			font-size: 1.5rem
+			width: 95%
+
+

@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box; }
+
+.testWrapper {
+  background-color: #ededed;
+  width: 700px;
+  height: 700px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.test {
+  display: none;
+  width: 90%;
+  padding: 20px; }
+
+.startScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+.finishScreen {
+  width: 90%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ededed;
+  width: 700px;
+  height: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px; }
+
+.numberOfQuestion {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px; }
+
+.textOfQuestion {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400; }
+
+.test-btn {
+  box-sizing: border-box;
+  display: block;
+  color: #ffffff !important;
+  background-color: #3867d6;
+  width: 250px;
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: 400;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.answersImgHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px; }
+
+.answerImgInner {
+  position: relative;
+  width: 140px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: block;
+  margin-left: 15px;
+  transition: 0.7s ease; }
+  .answerImgInner:hover .answerImg {
+    opacity: 1; }
+  .answerImgInner__active {
+    border: 3px solid #2550b6; }
+    .answerImgInner__active .answerImg {
+      opacity: 1; }
+
+.answerImg {
+  position: absolute;
+  top: calc(50% - 55px);
+  left: calc(50% - 65px);
+  display: block;
+  width: 130px;
+  height: 100px;
+  border-radius: 10px;
+  opacity: 0.7;
+  transition: 0.7s ease-in-out;
+  padding: 5px 10px; }
+  .answerImg img {
+    border-radius: 15px; }
+
+.qImgInner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 185px;
+  height: 140px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: none; }
+  .qImgInner:hover .questionImg {
+    opacity: 1; }
+
+.questionImg {
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 85px);
+  display: block;
+  width: 170px;
+  height: 120px;
+  border-radius: 10px;
+  opacity: 0.7;
+  transition: 0.7s ease-in-out; }
+
+.finishScreen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  background-color: transparent; }
+  .finishScreen .title {
+    font-family: "Montserrat";
+    font-size: 30px; }
+  .finishScreen .result .trueAnswers {
+    vertical-align: super;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px; }
+  .finishScreen .result .slash {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 19px; }
+  .finishScreen .result .totalQuestions {
+    font-family: "Montserrat";
+    font-weight: 400;
+    vertical-align: sub;
+    font-size: 19px; }
+
+.startScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between; }
+  .startScreen .title {
+    font-size: 18px;
+    font-weight: 400; }
+
+.checkAnswer_warining {
+  background-color: #ffeaa7;
+  border: 5px solid #fdcb6e;
+  display: none;
+  width: 330px;
+  padding: 20px 10px;
+  align-items: center;
+  transition: 0.7s ease-in-out; }
+  .checkAnswer_warining h6 {
+    margin-left: 30px; }
+
+.warining-icon {
+  font-size: 40px; }
+
+.textAnswers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.textAnswer {
+  background-color: #c3cbd7;
+  color: #ffffff;
+  padding: 20px 5px;
+  border-radius: 10px;
+  margin: 10px; }
+  .textAnswer__active {
+    border: 3px solid #1d3e8b; }
+
+/*# sourceMappingURL=main.css.map */

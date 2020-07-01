@@ -1,0 +1,137 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.nav-link, .navbar-brand {
+	text-transform: uppercase;
+	color: #7c899d
+}
+
+.card {
+	border-radius: 10px;
+	box-shadow: 0 0 2px 2px $grey;
+	background: $lgrey;
+	border: 1px solid $llgrey;
+	margin-left: 30px;
+	position: relative;
+}
+
+.aside-banner-title {
+		font-size: 18px;
+		border-bottom: 2px solid $accent;
+		color: $accent;
+		text-transform: uppercase;
+}
+
+.banner {
+	position: relative;
+	max-width: 250px;
+	max-height: 280px;
+}
+.oduifghf {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+
+.vk-group {
+	&-title {
+		font-weight: 700;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 20px;
+	}
+	&-divider {
+		border-bottom: 1px solid $dgray;
+		width: 75%;
+		margin-left: 12.5%;
+		margin-top: 25px;
+	}
+	&-button {
+		max-width: 140px;
+		max-height: 35px;
+		background-color: $vk;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $white;
+		font-weight: bolder;
+		font-size: 16px;
+		margin-left: 55px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		transition: all .5s ease;
+		border-radius: 10px;
+		&:hover {
+			background-color: $white;
+			color: $vk;
+			border: 2px solid $vk;
+			text-decoration: none;
+		}
+	}
+	&-logo {
+		border-radius: 30px;
+		width: 40px;
+		height: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+}
+
+.w-75 {
+	width: 75%;
+}
+
+.d-rel {
+	display: relative;
+}
+
+@import "media"; // Always at the end

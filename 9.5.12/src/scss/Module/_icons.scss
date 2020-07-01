@@ -1,0 +1,90 @@
+.icon {
+
+  &-close:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    content: "\f00d";
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  &-home:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    content: "\f015";
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  &-peoples:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    content: "\f0c0";
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  &-streets:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    content: "\f19c";
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  &-dates:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    content: "\f073";
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  &-war:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    content: "\f0fb";
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  &-test:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    content: "\f128";
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  &-info:before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    content: "\f05a";
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  &-by:before {
+    font-family: "Font Awesome 5 Brands";
+		padding: 1rem;
+		font-size: 3rem;
+    vertical-align: middle;
+    content: "\f4e7"
+  }
+
+  &-nc:before {
+    font-family: "Font Awesome 5 Brands";
+    padding: 1rem;
+    font-size: 3rem;
+    vertical-align: middle;
+    content: "\f4ef"
+  }
+
+  &-sa:before {
+    font-family: "Font Awesome 5 Brands";
+    padding: 1rem;
+    font-size: 3rem;
+    vertical-align: middle;
+    content: "\f4e8"
+  }
+}
