@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "daniilko0",
+  "author": "dadyarri",
   "license": "ISC",
   "dependencies": {
     "gulp": "^4.0.0",

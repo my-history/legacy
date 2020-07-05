@@ -11,7 +11,7 @@
     "> 1%",
     "last 3 version"
   ],
-  "author": "daniilko0 <danikk10001@yandex.ru>",
+  "author": "dadyarri <danikk10001@yandex.ru>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.2",

@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/daniilko0/motherland"
+    "url": "git+https://gitlab.com/dadyarri/motherland"
   },
-  "author": "daniilko0",
+  "author": "dadyarri",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/daniilko0/motherland/issues"
+    "url": "https://gitlab.com/dadyarri/motherland/issues"
   },
-  "homepage": "https://gitlab.com/daniilko0/motherland#readme"
+  "homepage": "https://gitlab.com/dadyarri/motherland#readme"
 }

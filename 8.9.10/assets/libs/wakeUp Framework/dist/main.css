@@ -3,7 +3,7 @@ Error: File to import not found or unreadable: grid.
        Load path: G:/IAndMyMotherland/Versions/8.9.10cur/assets/libs/wakeUp Framework/dist
         on line 9 of G:\IAndMyMotherland\Versions\8.9.10cur\assets\libs\wakeUp Framework\dist\main.sass
 
-4: // Author @daniilko0
+4: // Author @dadyarri
 5: // 20 column-grid
 6: //
 7: 	
@@ -50,4 +50,4 @@ C:/Program Files/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: grid.\A        Load path: G:/IAndMyMotherland/Versions/8.9.10cur/assets/libs/wakeUp Framework/dist\A         on line 9 of G:\IAndMyMotherland\Versions\8.9.10cur\assets\libs\wakeUp Framework\dist\main.sass\A \A 4: // Author @daniilko0\A 5: // 20 column-grid\A 6: //\A 7: 	\A 8: @import \"services/variables\"\A 9: @import \"grid\"\A 10: @import \"services/utilites/utilites\""; }
+  content: "Error: File to import not found or unreadable: grid.\A        Load path: G:/IAndMyMotherland/Versions/8.9.10cur/assets/libs/wakeUp Framework/dist\A         on line 9 of G:\IAndMyMotherland\Versions\8.9.10cur\assets\libs\wakeUp Framework\dist\main.sass\A \A 4: // Author @dadyarri\A 5: // 20 column-grid\A 6: //\A 7: 	\A 8: @import \"services/variables\"\A 9: @import \"grid\"\A 10: @import \"services/utilites/utilites\""; }

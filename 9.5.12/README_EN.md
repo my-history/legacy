@@ -28,7 +28,7 @@ You freely can:
 With restrictions:
 ---
 
-**Attribution** – editing or share *Project* you must set an active link to ([GitLab repository](https://gitlab.com/daniilko0/motherland)) or to sitepage from which you took content.
+**Attribution** – editing or share *Project* you must set an active link to ([GitLab repository](https://gitlab.com/dadyarri/motherland)) or to sitepage from which you took content.
 
 **Non-commercical use** – you can't use *Project* and it parts in commercical use.
 
@@ -40,15 +40,15 @@ Contributing
 ===
 
 
-**Idea:**  *daniilko0*;
+**Idea:**  *dadyarri*;
 
-**Typesetting, scripting:** *daniilko0*;
+**Typesetting, scripting:** *dadyarri*;
 
 **Design:** *Taron*;
 
 **Content-providing:** *ninaklyukina*;
 
-**Content-making:** *daniilko0, MrProDark*;
+**Content-making:** *dadyarri, MrProDark*;
 
 **Testing:** *MrProDark, ebobola, JamesMechsuit, Bughunter, Capitan_Dazh*
 

@@ -1,15 +1,15 @@
 Соавторы
 ===
 
-**Идея:**  *daniilko0*;
+**Идея:**  *dadyarri*;
 
-**Верстка, скриптинг:** *daniilko0*;
+**Верстка, скриптинг:** *dadyarri*;
 
 **Дизайн:** *Taron*;
 
 **Контент-провайдинг:** *ninaklyukina*;
 
-**Контент-мэйкинг:** *daniilko0, MrProDark*;
+**Контент-мэйкинг:** *dadyarri, MrProDark*;
 
 **Тестирование:** *MrProDark, ebobola, JamesMechsuit, Bughunter, Capitan_Dazh*
 
