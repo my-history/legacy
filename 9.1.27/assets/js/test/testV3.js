@@ -83,7 +83,7 @@ function variables() {
 		//Вопрос 1
 		{
 			"question": "Кому принадлежал этот особняк до революции 1917 года?",
-			"questionImg": "/MyMotherland/dist/assets/images/37/main/places/mansion-of-klementyev.jpg",
+			"questionImg": "../../../images/37/main/places/mansion-of-klementyev.jpg",
 			"textAnswers": [
 				"Клементьевой А. А.",
 				"Дудину М.А.",
@@ -109,7 +109,7 @@ function variables() {
 		//Вопрос 3
 		{
 			"question": "Как называется этот храм?",
-			"questionImg": "/MyMotherland/dist/assets/images/37/main/places/church-of-icon-of-god-mother.jpg",
+			"questionImg": "../../../images/37/main/places/church-of-icon-of-god-mother.jpg",
 			"textAnswers": [
 				"Храм иконы Божьей Матери",
 				"Церковь Покрова",
@@ -130,7 +130,7 @@ function variables() {
 		//Вопрос 5
 		{
 			"question": "Какое здание изображено на фотографии?",
-			"questionImg": "/MyMotherland/dist/assets/images/37/main/places/surgical-dept.jpg",
+			"questionImg": "../../../images/37/main/places/surgical-dept.jpg",
 			"textAnswers": [
 				"Больница №1",
 				"Казармы",
@@ -148,14 +148,14 @@ function variables() {
 			"questionImg": "",
 			"textAnswers": [],
 			"imgAnswers": [
-				"/MyMotherland/dist/assets/images/37/main/places/church-of-icon-of-god-mother.jpg", "/MyMotherland/dist/assets/images/37/main/places/intercession-church.jpg", "/MyMotherland/dist/assets/images/37/main/streets/bolshaya-furmanovskaya-st-furmanov.jpg", "/MyMotherland/dist/assets/images/37/main/places/i-don-t-know-what-church-it-is.jpg"
+				"../../../images/37/main/places/church-of-icon-of-god-mother.jpg", "../../../images/37/main/places/intercession-church.jpg", "../../../images/37/main/streets/bolshaya-furmanovskaya-st-furmanov.jpg", "../../../images/37/main/places/i-don-t-know-what-church-it-is.jpg"
 			],
 			"trueAnswer": $a2
 		},
 		//Вопрос 7
 		{
 			"question": "Как называется этот храм?",
-			"questionImg": "/MyMotherland/dist/assets/images/37/main/places/intercession-church.jpg",
+			"questionImg": "../../../images/37/main/places/intercession-church.jpg",
 			"textAnswers": [
 				"Церковь Покрова",
 				"Храм Вознесения Господня",
@@ -168,7 +168,7 @@ function variables() {
 		//Вопрос 8
 		{
 			"question": "Кому принадлежала эта усадьба?",
-			"questionImg": "/MyMotherland/dist/assets/images/37/main/places/mansion-of-losev.jpg",
+			"questionImg": "../../../images/37/main/places/mansion-of-losev.jpg",
 			"textAnswers": [
 				"Фабриканту Горбунову Г.К.",
 				"Художнику Трубникову Д.А.",
@@ -181,7 +181,7 @@ function variables() {
 		//Вопрос 9
 		{
 			"question": "Как называется этот храм?",
-			"questionImg": "/MyMotherland/dist/assets/images/37/main/places/ascension-church.jpg",
+			"questionImg": "../../../images/37/main/places/ascension-church.jpg",
 			"textAnswers": [
 				"Храм Вознесения Господня",
 				"Храм Спаса на Крови",
@@ -194,7 +194,7 @@ function variables() {
 		//Вопрос 10
 		{
 			"question": "С какой целью использовалось это здание до революции?",
-			"questionImg": "/MyMotherland/dist/assets/images/37/main/places/eight-school.jpg",
+			"questionImg": "../../../images/37/main/places/eight-school.jpg",
 			"textAnswers": [
 				"Школа для рабочих",
 				"Рабочие казармы",
@@ -272,7 +272,7 @@ function variables() {
 		//Вопрос 16
 		{
 			"question": "Кому установлен этот бюст?",
-			"questionImg": "/MyMotherland/dist/assets/images/37/main/places/gorbunov-grig-klem-censored.jpg",
+			"questionImg": "../../../images/37/main/places/gorbunov-grig-klem-censored.jpg",
 			"textAnswers": [
 				"В.А.Лапшину",
 				"Д.А.Фурманову",
