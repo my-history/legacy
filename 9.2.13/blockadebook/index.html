@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="../dist/assets/css/bb.css">
 		<link rel="shortcut icon" type="image/png" href="../dist/assets/images/bb/logo.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 		<title>Блокадная книга</title>
 
@@ -30,19 +31,21 @@
 			<!-- 			<div class="Menu-trigger"></div>
  -->
 			<div class="ControlPanel">
-				<div class="ControlPanel-trigger" data-controller="controllers-trigger"></div>
+				<div class="ControlPanel-trigger" data-controller="controllers-trigger">
+					<i class="fa fa-cog"></i>
+				</div>
 				<div class="ControlPanel-buttons" data-controller="controllers-set">
 					<div data-controller="inc-font" title="Увеличить шрифт" class="ControlPanel-incFontBtn">
-						&plus;
+						<i class="fa fa-plus"></i>
 					</div>
 					<div data-controller="dec-font" title="Уменьшить шрифт" class="ControlPanel-decFontBtn">
-						&minus;
+						<i class="fa fa-minus"></i>
 					</div>
 					<div data-controller="default-styles" title="Сбросить параметры" class="ControlPanel-defaultStylesBtn">
-						&#9769;
+						<i class="fa fa-eraser"></i>
 					</div>
 					<div data-controller="change-theme" title="Сменить тему" class="ControlPanel-changeThemeBtn">
-&#10000;
+						<i class="fa fa-paint-brush"></i>
 					</div>
 				</div>
 			</div>
